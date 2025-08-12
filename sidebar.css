@@ -1,0 +1,67 @@
+#prompt-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+  z-index: 9999;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 14px;
+  color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, width 0.3s ease;
+  width: 280px;
+}
+
+.dark #prompt-sidebar {
+  background: rgba(32, 33, 35, 0.92);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  color: #ececec;
+}
+
+#prompt-sidebar.closed {
+  transform: translateX(100%);
+}
+
+#prompt-sidebar-header {
+  position: sticky;
+  top: 0;
+  background: inherit;
+  padding: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark #prompt-sidebar-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#prompt-list {
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+}
+
+#prompt-list li {
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  word-break: break-word;
+}
+
+#prompt-list li:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.dark #prompt-list li:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
