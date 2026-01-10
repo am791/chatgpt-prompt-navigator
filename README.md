@@ -17,6 +17,10 @@ A lightweight browser extension that adds a **prompt history sidebar** to ChatGP
 - 💡 **Lightweight** – Minimal CSS and JavaScript, loads quickly without slowing down ChatGPT.
 - 🌐 **Browser Support** - Chrome & Edge (latest stable versions)
 
+## 🎥 Prototype – ChatGPT Prompt Navigator - Video
+
+[![ChatGPT Prompt Navigator Demo](https://img.youtube.com/vi/f_gSPFT1YWE/0.jpg)](https://www.youtube.com/watch?v=f_gSPFT1YWE)
+
 ## Prompts Sidebar
 
 **No Prompt History**
